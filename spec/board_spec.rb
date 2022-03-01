@@ -1,4 +1,4 @@
-require 'board.rb'
+require_relative '../UI/board'
 
     describe 'tictactoe' do
         it "has a gameboard" do
