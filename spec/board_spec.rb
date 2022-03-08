@@ -28,5 +28,17 @@ require_relative '../UI/board'
             expect(result).to eq('A')
         end
 
+        it 'returns row B' do
+            board = TicTacToe.new
+            result = board.get_row('B')
+            expect(result).to eq('B')
+        end
+
+        it 'returns row C' do
+            board = TicTacToe.new
+            result = board.get_row('C')
+            expect(result).to eq('C')
+        end
+
 end
 

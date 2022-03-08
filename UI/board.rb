@@ -25,7 +25,7 @@ class TicTacToe
     end
 
     def get_row(position)
-        return 'A'
+        return position
     end
 
     def get_column(position)
