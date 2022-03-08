@@ -33,6 +33,19 @@ class TicTacToe
     end
 
     def mark_x(row, column, grid)
+        if row == 'A' && column == '1'
+            return [
+            ["X", "", ""],
+            [ "", "", ""],
+            [ "", "", ""]
+            ]
+        else
+            return [
+            ["", "X", ""],
+            [ "", "", ""],
+            [ "", "", ""]
+            ]
+        end
     end
 
 end

@@ -39,5 +39,28 @@ require_relative '../UI/board'
             expect(result).to eq('1')
         end
 
+        it 'for the top left corner, gives us a grid with an X in the top left corner' do
+            result = @board.mark_x('A', '1',    [["", "", ""],
+                                                ["" , "", ""],
+                                                ["" , "", ""]])
+            expect(result).to eq([
+            ["X", "", ""],
+            ["" , "", ""],
+            ["" , "", ""]
+            ])
+        end
+
+        it 'for the top middle, gives us a grid with an X in the top middle' do
+            result = @board.mark_x('A', '2',    [["", "", ""],
+                                                ["" , "", ""],
+                                                ["" , "", ""]])
+            expect(result).to eq([
+            ["", "X", ""],
+            ["" , "", ""],
+            ["" , "", ""]
+            ])
+
+end
+
 end
 
