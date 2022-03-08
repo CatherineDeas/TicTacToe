@@ -29,6 +29,7 @@ class TicTacToe
     end
 
     def get_column(position)
+        return position
     end
 
     def mark_x(row, column, grid)

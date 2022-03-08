@@ -34,5 +34,10 @@ require_relative '../UI/board'
             expect(result).to eq('C')
         end
 
+        it 'returns column 1' do
+            result = @board.get_column('1')
+            expect(result).to eq('1')
+        end
+
 end
 
