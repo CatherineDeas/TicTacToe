@@ -1,20 +1,17 @@
 require_relative '../UI/board'
 
     describe 'tictactoe' do
+        before do
+            @board = TicTacToe.new
+        end
+
         it "has a gameboard" do
-            # Arrange
-            tictactoe = TicTacToe.new
-    
-            # Act
-            result = tictactoe.gameboard([])
-    
-            # Assert
+            result = @board.gameboard([])
             expect(result).to eq([])
         end
 
         it 'gives us a blank grid' do
-            board = TicTacToe.new
-            result = board.blank_grid
+            result = @board.blank_grid
             expect(result).to eq([
             ["", "", ""],
             ["", "", ""],
@@ -22,21 +19,18 @@ require_relative '../UI/board'
             ])
         end
 
-        it 'gives us a position in the row' do
-            board = TicTacToe.new
-            result = board.get_row('A')
+        it 'returns row A' do
+            result = @board.get_row('A')
             expect(result).to eq('A')
         end
 
         it 'returns row B' do
-            board = TicTacToe.new
-            result = board.get_row('B')
+            result = @board.get_row('B')
             expect(result).to eq('B')
         end
 
         it 'returns row C' do
-            board = TicTacToe.new
-            result = board.get_row('C')
+            result = @board.get_row('C')
             expect(result).to eq('C')
         end
 
