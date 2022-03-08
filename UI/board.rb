@@ -34,18 +34,11 @@ class TicTacToe
 
     def mark_x(row, column, grid)
         if row == 'A' && column == '1'
-            return [
-            ["X", "", ""],
-            [ "", "", ""],
-            [ "", "", ""]
-            ]
+            grid[0][0] = 'X'
         else
-            return [
-            ["", "X", ""],
-            [ "", "", ""],
-            [ "", "", ""]
-            ]
+            grid[0][1] = 'X'
         end
+        return grid
     end
 
 end
