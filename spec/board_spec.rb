@@ -12,5 +12,15 @@ require_relative '../UI/board'
             expect(result).to eq([])
         end
 
+        it 'gives us a blank grid' do
+            board = TicTacToe.new
+            result = board.blank_grid
+            expect(result).to eq([
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""]
+            ])
+        end
+
 end
 

@@ -17,7 +17,11 @@ class TicTacToe
     end
 
     def blank_grid
-    
+     grid = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""]
+        ]
     end
 
     def get_row(position)
