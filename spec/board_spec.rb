@@ -22,5 +22,11 @@ require_relative '../UI/board'
             ])
         end
 
+        it 'gives us a position in the row' do
+            board = TicTacToe.new
+            result = board.get_row('A')
+            expect(result).to eq('A')
+        end
+
 end
 
